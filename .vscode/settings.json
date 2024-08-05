@@ -2,6 +2,8 @@
     "files.associations": {
         "ostream": "cpp",
         "limits": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "initializer_list": "cpp"
     }
 }
