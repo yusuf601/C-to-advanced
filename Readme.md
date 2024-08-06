@@ -42,3 +42,7 @@
 Repository ini bersifat pribadi dan mungkin belum terstruktur dengan baik. Kode yang ada di sini belum tentu sempurna dan masih dalam tahap pengembangan.
 
 **Disclaimer:** Informasi dalam repository ini disediakan "apa adanya" tanpa jaminan apapun.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87372f0 (git problem solve)
