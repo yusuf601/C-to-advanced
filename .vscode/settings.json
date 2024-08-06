@@ -4,6 +4,7 @@
         "limits": "cpp",
         "iostream": "cpp",
         "*.tcc": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "random": "cpp"
     }
 }
