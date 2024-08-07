@@ -1,6 +1,3 @@
-
-
-
 // #include <iostream>
 
 // using namespace std;
@@ -55,10 +52,10 @@ int main() {
         cout << bilanganPertama << " ";
 
         // Hitung suku berikutnya
-        int bilanganBerikutnya = bilanganPertama + bilanganKedua;
-
+        int bilanganBerikutnya = bilanganPertama + bilanganKedua;  
+        
         // Perbarui nilai untuk suku berikutnya
-        bilanganPertama = bilanganKedua;
+        bilanganPertama = bilanganKedua;   //
         bilanganKedua = bilanganBerikutnya;
     }
 
