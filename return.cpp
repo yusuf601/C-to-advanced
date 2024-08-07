@@ -6,6 +6,7 @@ int kuadrat(int x) {
     int y;
     y = x * x;
     return y;
+
 }
 
 
