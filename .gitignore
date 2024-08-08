@@ -1,0 +1,5 @@
+# Abaikan seluruh isi folder data
+output/
+
+# Abaikan seluruh isi folder vscode
+.vscode/
