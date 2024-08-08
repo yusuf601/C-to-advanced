@@ -5,7 +5,8 @@ using namespace std;
 
 int main() {
     char lanjut;
-    while(true){
+    bool pilihan = true;
+    while(pilihan){
         cout << "apakah anda ingin melempar dadu(Y/n) = ";
         cin >> lanjut;
         lanjut = toupper(lanjut);
@@ -17,6 +18,9 @@ int main() {
             break;
         }else{
             cout << "warning" << endl;
+            pilihan = false;
+        
+
         }
 
         
