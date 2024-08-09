@@ -9,6 +9,6 @@ int main(){
 
     //int a memiliki addres dan nilai 1 alamat
 
-    cout << "nilai : " << a;
+    cout << "nilai : " << a << endl;
     cout << "Alamat : " << &a;
 }
