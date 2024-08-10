@@ -2,7 +2,7 @@
 using namespace std;
 
 void fungsi(int *b){
-        cout << "Nilai b = " << b << endl;
+    cout << "Nilai b = " << b << endl;
     cout << "Adress b = " << *b << endl << endl; //deferencing
 }
 
