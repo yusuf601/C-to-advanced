@@ -2,53 +2,53 @@
 using namespace std;
 
 int main() {
-  // We put "1" to indicate there is a ship.
-  bool ships[4][4] = {
+  // Kami menggunakan "1" untuk menunjukkan adanya kapal.
+  bool kapal[4][4] = {
     { 0, 1, 1, 0 },
     { 0, 0, 0, 0 },
     { 0, 0, 1, 0 },
     { 0, 0, 1, 0 }
   };
 
-  // Keep track of how many hits the player has and how many turns they have played in these variables
-  int hits = 0;
-  int numberOfTurns = 0;
+  // Lacak berapa banyak tembakan mengenai kapal dan berapa banyak giliran yang sudah dimainkan
+  int tembakan_mengenai = 0;
+  int jumlah_giliran = 0;
 
-  // Allow the player to keep going until they have hit all four ships
-  while (hits < 4) {
-    int row, column;
+  // Izinkan pemain terus bermain sampai semua kapal tenggelam
+  while (tembakan_mengenai < 4) {
+    int baris, kolom;
 
-    cout << "Selecting coordinates\n";
+    cout << "Memilih koordinat\n";
 
-    // Ask the player for a row
-    cout << "Choose a row number between 0 and 3: ";
-    cin >> row;
+    // Minta pemain memilih nomor baris
+    cout << "Pilih nomor baris antara 0 dan 3: ";
+    cin >> baris;
 
-    // Ask the player for a column
-    cout << "Choose a column number between 0 and 3: ";
-    cin >> column;
+    // Minta pemain memilih nomor kolom
+    cout << "Pilih nomor kolom antara 0 dan 3: ";
+    cin >> kolom;
 
-    // Check if a ship exists in those coordinates
-    if (ships[row][column]) {
-      // If the player hit a ship, remove it by setting the value to zero.
-      ships[row][column] = 0;
+    // Periksa apakah ada kapal di koordinat tersebut
+    if (kapal[baris][kolom]) {
+      // Jika pemain mengenai kapal, hapus kapal dengan mengubah nilainya menjadi nol.
+      kapal[baris][kolom] = 0;
 
-      // Increase the hit counter
-      hits++;
+      // Tingkatkan penghitung tembakan mengenai kapal
+      tembakan_mengenai++;
 
-      // Tell the player that they have hit a ship and how many ships are left
-      cout << "Hit! " << (4-hits) << " left.\n\n";
+      // Beritahu pemain bahwa mereka mengenai kapal dan berapa banyak kapal yang tersisa
+      cout << "Terkena! Tersisa " << (4-tembakan_mengenai) << " kapal.\n\n";
     } else {
-      // Tell the player that they missed
-      cout << "Miss\n\n";
+      // Beritahu pemain bahwa mereka meleset
+      cout << "Meleset\n\n";
     }
 
-    // Count how many turns the player has taken
-    numberOfTurns++;
+    // Hitung berapa banyak giliran yang sudah dimainkan
+    jumlah_giliran++;
   }
 
-  cout << "Victory!\n";
-  cout << "You won in " << numberOfTurns << " turns";
-  
+  cout << "Menang!\n";
+  cout << "Anda menang dalam " << jumlah_giliran << " giliran";
+
   return 0;
 }
